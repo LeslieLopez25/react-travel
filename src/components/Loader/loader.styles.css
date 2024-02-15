@@ -4,3 +4,34 @@
     align-items: center;
     height: 100vh;
 }
+
+.spinner-overly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/pattern-waves.png");
+    width: 100vw;
+    height: 100vh;
+}
+
+.spinner-container {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    border: 15px solid hsl(42.9, 74.4%, 49%);
+    border-radius: 50%;
+    border-top-color: hsl(212.1, 100%, 19.4%);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

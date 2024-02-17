@@ -1,31 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   // handleClick to determine if the icon is clicked
   const handleClick = () => setClick(!click);
   // closeMobileMenu to close the mobile menu
   const closeMobileMenu = () => setClick(false);
-
-  // Displays button if the screen is less than 960px
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  // To render the button
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  // When the screen size changes, the button is displayed or not
-  window.addEventListener("resize", showButton);
 
   return (
     <nav className="navbar">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Navbar from "./components/Navbar/navbar.component";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader/loader.component";
 
@@ -18,8 +19,8 @@ export default function App() {
         <Loader />
       ) : (
         <>
-          )}
-          <div className="App"></div>
+          <Navbar />
+          <Routes></Routes>
         </>
       )}
     </Router>

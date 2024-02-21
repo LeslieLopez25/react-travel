@@ -1,7 +1,11 @@
 import React from "react";
+import Video from "../../assets/videos/video-1.mp4";
+import "./banners.styles.css";
 
-const video_2 = () => {
-  return <div>video</div>;
-};
-
-export default video_2;
+export default function video() {
+  return (
+    <div className="video-container">
+      <video src={Video} autoPlay loop muted />
+    </div>
+  );
+}

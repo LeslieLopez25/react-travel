@@ -1,7 +1,9 @@
 import React from "react";
-
-const video_2 = () => {
-  return <div>video-2.component</div>;
-};
-
-export default video_2;
+import Video_2 from "../../assets/videos/video-2.mp4";
+export default function video_2() {
+  return (
+    <div className="video-container">
+      <video src={Video_2} autoPlay loop muted />
+    </div>
+  );
+}

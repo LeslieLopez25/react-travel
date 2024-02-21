@@ -1,0 +1,14 @@
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/thailand.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0 1rem;
+    max-height: 62.5rem;
+    height: 25rem;
+    opacity: 0.8;
+    transition: 500ms;
+}

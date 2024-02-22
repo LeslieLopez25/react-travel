@@ -3,6 +3,7 @@ import HeroSection from "../../Hero/hero.component";
 import VideoBanner from "../../Banners/video-banner.component";
 import Cards from "../../Cards/cards.component";
 import Banner from "../../Banners/banner.component";
+import ImageCarousel from "../../ImageCarousel/imageCarousel.component";
 import "../../../App.css";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <Cards />
       <Banner />
+      <ImageCarousel />
     </>
   );
 }

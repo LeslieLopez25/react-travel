@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../../Hero/hero.component";
 import { VideoBanner, Banner } from "../../exportBanners.component";
 import Cards from "../../Cards/cards.component";
-import ImageCarousel from "../../ImageCarousel/imageCarousel.component";
+// import ImageCarousel from "../../ImageCarousel/imageCarousel.component";
 import "../../../App.css";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <Cards />
       <Banner />
-      <ImageCarousel />
+      {/* <ImageCarousel /> */}
     </>
   );
 }

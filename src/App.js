@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 import Navbar from "./components/Navbar/navbar.component";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader/loader.component";
+import { Home } from "./components/exportPages.component";
+import "./App.css";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +21,9 @@ export default function App() {
       ) : (
         <>
           <Navbar />
-          <Routes></Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
         </>
       )}
     </Router>

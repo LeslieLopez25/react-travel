@@ -1,0 +1,10 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem calc((100vw - 81.25rem) / 2);
+    min-height: 100%;
+    width: 100%;
+    box-shadow: inset 0 0 0 62.5rem hsl(197.5, 44.4%, 10.6%, 0.4);
+}

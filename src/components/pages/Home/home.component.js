@@ -1,8 +1,7 @@
 import React from "react";
 import HeroSection from "../../Hero/hero.component";
-import VideoBanner from "../../Banners/video-banner.component";
+import { VideoBanner, Banner } from "../../exportBanners.component";
 import Cards from "../../Cards/cards.component";
-import Banner from "../../Banners/banner.component";
 import ImageCarousel from "../../ImageCarousel/imageCarousel.component";
 import "../../../App.css";
 

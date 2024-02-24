@@ -4,7 +4,7 @@ import React from "react";
 export default function CardItem({ label, src, text }) {
   return (
     <li className="cards__item">
-      <div className="cards__item_block">
+      <div className="cards__item__block">
         <figure className="cards__item__pic-wrap" data-category={label}>
           <img className="cards__item__img" src={src} alt="Travel" />
         </figure>

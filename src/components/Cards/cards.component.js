@@ -6,15 +6,20 @@ import Img3 from "../../assets/images/france-4.jpg";
 import Img4 from "../../assets/images/greece-4.jpg";
 import Img5 from "../../assets/images/italy-4.jpg";
 import Img6 from "../../assets/images/norway-4-min.jpg";
+import "./cards.styles.css";
 
 export default function Cards() {
   return (
     <div className="cards">
-      <h1>Where Would You Like To Go?</h1>
+      <h1 className="section-title">Where Would You Like To Go?</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            <CardItem src={Img1} text="The Beauty Of The City" label="Canada" />
+            <CardItem
+              src={Img1}
+              text="The Beauty And Colors Of The City"
+              label="Canada"
+            />
             <CardItem
               src={Img2}
               text="The Scenery Of Ancient Architecture"
@@ -25,6 +30,8 @@ export default function Cards() {
               text="A Walk Through The Past"
               label="France"
             />
+          </ul>
+          <ul className="cards__items">
             <CardItem
               src={Img4}
               text="Ancient Structures Standing Tall"

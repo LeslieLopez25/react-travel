@@ -22,12 +22,6 @@ video {
     width: 100%;
     height: 25rem;
     object-fit: cover;
-    opacity: 0.8;
-    transition: 500ms ease;
-}
-
-video:hover {
-    opacity: 1;
     transition: 500ms ease;
 }
 

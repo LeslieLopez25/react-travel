@@ -1,5 +1,6 @@
 import React from "react";
 import Video_2 from "../../assets/videos/video-2.mp4";
+import "./banners.styles.css";
 export default function Video_2_Banner() {
   return (
     <div className="video-container">

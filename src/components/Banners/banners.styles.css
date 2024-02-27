@@ -9,23 +9,23 @@
     padding: 0 1rem;
     max-height: 62.5rem;
     height: 25rem;
-    opacity: 0.8;
-    transition: 500ms;
-}
-
-.banner-container:hover {
-    opacity: 1;
-    transition: 500ms;
 }
 
 video {
     width: 100%;
-    height: 25rem;
+    height: 100%;
+    position: fixed;
     object-fit: cover;
-    transition: 500ms ease;
+    z-index: -1;
 }
 
 .video-container {
-    max-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     object-fit: contain;
+    width: 100%;
+    height: 35.62rem;
+    box-shadow: inset 0 0 0 62.5rem hsl(197.5, 44.4%, 10.6%, 0.2);
 }

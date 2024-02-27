@@ -7,9 +7,6 @@ export default function HeroSection() {
     <div className="hero-container">
       <div className="left-section"></div>
       <div className="right-section">
-        <h1 className="section-title">
-          Forge your path and behold the beauty of the world!{" "}
-        </h1>
         <h2>Immerse yourself in the vibrant culture of the Netherlands.</h2>
         <p>
           Explore the Netherlands for its historic charm, modern innovation, and

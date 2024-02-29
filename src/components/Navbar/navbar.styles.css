@@ -21,19 +21,22 @@
 .navbar-logo {
     display: flex;
     align-items: center;
-    background: linear-gradient(180deg, rgb(0, 46, 99) 0%, rgb(218, 165, 32) 100%);
+    background: linear-gradient(180deg, rgb(0, 46, 99) 30%, rgb(218, 165, 32) 50%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2rem;
     margin-left: 1.25rem;
+    text-shadow: 0 0 5px #ffcc33;
 }
 
 .logo {
+    margin-top: 5px;
     text-decoration: none;
 }
 
 .navbar-icon {
-    font-size: 1.875rem;
+    width: 50px;
+    height: 50px;
     margin-bottom: 1rem;
     margin-left: 0.5rem;
     vertical-align: middle;

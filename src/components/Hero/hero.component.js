@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/button.component";
+import Img1 from "../../assets/images/netherlands-1-min.jpg";
 import "./hero.styles.css";
 
 export default function HeroSection() {
   return (
     <div className="hero-container">
-      <div className="left-section"></div>
+      <div className="left-section">
+        <img src={Img1} alt="Netherlands" />
+      </div>
       <div className="right-section">
         <h2>Immerse yourself in the vibrant culture of the Netherlands.</h2>
         <p>

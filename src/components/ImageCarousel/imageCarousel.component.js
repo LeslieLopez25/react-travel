@@ -6,7 +6,7 @@ import Img4 from "../../assets/images/greece-4.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-export function ImageCarousel() {
+export default function ImageCarousel() {
   const slides = [
     {
       url: { Img1 },
@@ -41,25 +41,25 @@ export function ImageCarousel() {
   };
 
   return (
-    <div className="">
+    <div className="image-container">
       <div
         style={{ backgroundImage: `url(${slides[0].url})` }}
-        className=""
+        className="cover-image"
       ></div>
       {/* Left Arrow */}
-      <div className="">
+      <div className="left-arrow">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className="">
+      <div className="right-arrow">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-      <div className="">
+      <div className="slide-indicator">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className=""
+            className="slider"
           >
             <RxDotFilled />
           </div>

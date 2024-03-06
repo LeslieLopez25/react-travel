@@ -49,11 +49,15 @@ export default function ImageCarousel() {
       ></div>
       {/* Left Arrow */}
       <div className="left-arrow">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        <div className="arrow-icon">
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        </div>
       </div>
       {/* Right Arrow */}
       <div className="right-arrow">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
+        <div className="arrow-icon">
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
       </div>
       <div className="slide-indicator">
         {slides.map((slide, slideIndex) => (

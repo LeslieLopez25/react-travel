@@ -9,6 +9,19 @@
     padding-right: 1rem;
     position: relative;
     display: inline-block;
+    background: linear-gradient(-45deg, #002147, #002e63, #daa520, #ffcc33);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }
 
 .image-cover {

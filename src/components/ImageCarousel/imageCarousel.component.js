@@ -5,20 +5,21 @@ import Img3 from "../../assets/images/italy-4.jpg";
 import Img4 from "../../assets/images/greece-4.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import "./imageCarousel.styles.css";
 
 export default function ImageCarousel() {
   const slides = [
     {
-      url: { Img1 },
+      url: Img1,
     },
     {
-      url: { Img2 },
+      url: Img2,
     },
     {
-      url: { Img3 },
+      url: Img3,
     },
     {
-      url: { Img4 },
+      url: Img4,
     },
   ];
 
@@ -43,8 +44,8 @@ export default function ImageCarousel() {
   return (
     <div className="image-container">
       <div
-        style={{ backgroundImage: `url(${slides[0].url})` }}
-        className="cover-image"
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        className="image-cover"
       ></div>
       {/* Left Arrow */}
       <div className="left-arrow">

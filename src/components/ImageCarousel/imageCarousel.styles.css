@@ -36,42 +36,31 @@
     transition-duration: 0.5s;
 }
 
-.left-arrow {
-    display: none !important;
+.left-arrow,
+.right-arrow {
     position: absolute;
     top: 50%;
-    transform: translateX(0);
     transform: translateY(-50%);
-    left: 1.25rem;
     font-size: 1.5rem;
     border-radius: 9999px;
     padding: 0.5rem;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     cursor: pointer;
+    transition: opacity 0.5s;
 }
 
-.left-arrow:hover {
-    display: block !important;
+.left-arrow:hover,
+.right-arrow:hover {
+    opacity: 0.5;
+}
+
+.left-arrow {
+    left: 17rem;
 }
 
 .right-arrow {
-    display: none !important;
-    position: absolute;
-    top: 50%;
-    transform: translateX(0);
-    transform: translateY(-50%);
-    right: 1.25rem;
-    font-size: 1.5rem;
-    border-radius: 9999px;
-    padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-    cursor: pointer;
-}
-
-.right-arrow:hover {
-    display: block !important;
+    right: 17rem;
 }
 
 .slide-indicator {

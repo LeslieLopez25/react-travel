@@ -3,6 +3,7 @@ import Img1 from "../../assets/images/england-4.jpg";
 import Img2 from "../../assets/images/france-4.jpg";
 import Img3 from "../../assets/images/italy-4.jpg";
 import Img4 from "../../assets/images/greece-4.jpg";
+import Img5 from "../../assets/images/singapore-1.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import "./imageCarousel.styles.css";
@@ -20,6 +21,9 @@ export default function ImageCarousel() {
     },
     {
       url: Img4,
+    },
+    {
+      url: Img5,
     },
   ];
 
@@ -43,6 +47,7 @@ export default function ImageCarousel() {
 
   return (
     <div className="image-container">
+      <h1 className="section-title">See The World</h1>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="image-cover"

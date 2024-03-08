@@ -12,18 +12,23 @@ export default function ImageCarousel() {
   const slides = [
     {
       url: Img1,
+      title: "England",
     },
     {
       url: Img2,
+      title: "France",
     },
     {
       url: Img3,
+      title: "Italy",
     },
     {
       url: Img4,
+      title: "Greece",
     },
     {
       url: Img5,
+      title: "Singapore",
     },
   ];
 
@@ -52,6 +57,9 @@ export default function ImageCarousel() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="image-cover"
       ></div>
+      <div className="title-overlay">
+        <h2 className="image-title">{slides[currentIndex].title}</h2>
+      </div>
       {/* Left Arrow */}
       <div className="left-arrow">
         <div className="arrow-icon">

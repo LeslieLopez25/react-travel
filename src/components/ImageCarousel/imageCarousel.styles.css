@@ -40,6 +40,36 @@ h1 {
     transition-duration: 0.5s;
 }
 
+.title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-cover:hover+.title-overlay,
+.title-overlay:hover {
+    opacity: 1;
+}
+
+.image-title {
+    margin: 0;
+    color: #ffcc33;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-cover:hover+.title-overlay .image-title,
+.title-overlay:hover .image-title {
+    opacity: 1;
+}
+
 .left-arrow,
 .right-arrow {
     position: absolute;

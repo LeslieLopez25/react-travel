@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/navbar.component";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader/loader.component";
 import { Home } from "./components/exportPages.component";
+import Footer from "./components/Footer/footer.component";
 import "./App.css";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
+          <Footer />
         </>
       )}
     </Router>

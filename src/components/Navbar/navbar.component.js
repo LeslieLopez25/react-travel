@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
 import "./navbar.styles.css";
 
@@ -21,7 +23,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          <FontAwesomeIcon icon={click ? faTimes : faBars} />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">

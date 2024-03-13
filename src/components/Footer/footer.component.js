@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/images/logo.png";
 
 export default function Footer() {
@@ -48,7 +54,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Facebook"
             >
-              <i className="fab fa-facebook-f" />
+              <FontAwesomeIcon icon={faFacebookF} />
             </Link>
             <Link
               className="social-icon_link instagram"
@@ -56,7 +62,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Instagram"
             >
-              <i className="fab fa-instagram" />
+              <FontAwesomeIcon icon={faInstagram} />
             </Link>
             <Link
               className="social-icon_link twitter"
@@ -64,7 +70,7 @@ export default function Footer() {
               target="_blank"
               aria-label="Twitter"
             >
-              <i className="fab fa-twitter" />
+              <FontAwesomeIcon icon={faTwitter} />
             </Link>
           </div>
         </div>

@@ -7,11 +7,12 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/images/logo.png";
+import "./footer.styles.css";
 
 export default function Footer() {
   return (
     <div className="footer-container">
-      <h2 className="footer-heading">Blaze Ahead!</h2>
+      <h2 className="footer-heading section-title">Blaze Ahead!</h2>
       <div className="footer-content">
         <div className="footer-wrapper">
           <div className="footer-items">
@@ -48,29 +49,20 @@ export default function Footer() {
             Trailblaze © {new Date().getFullYear()}
           </small>
           <div className="social-icons">
-            <Link
-              className="social-icon_link facebook"
-              to="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <FontAwesomeIcon icon={faFacebookF} />
+            <Link to="/" target="_blank" aria-label="Facebook">
+              <FontAwesomeIcon
+                className="social-icon_link"
+                icon={faFacebookF}
+              />
             </Link>
-            <Link
-              className="social-icon_link instagram"
-              to="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
+            <Link to="/" target="_blank" aria-label="Instagram">
+              <FontAwesomeIcon
+                className="social-icon_link"
+                icon={faInstagram}
+              />
             </Link>
-            <Link
-              className="social-icon_link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
+            <Link to="/" target="_blank" aria-label="Twitter">
+              <FontAwesomeIcon className="social-icon_link" icon={faTwitter} />
             </Link>
           </div>
         </div>

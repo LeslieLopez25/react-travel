@@ -16,18 +16,17 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-wrapper">
           <div className="footer-items">
-            <h2>Address</h2>
-            <p>placeholder</p>
+            <h2>Home</h2>
+            <p>Features</p>
+            <p>Pricing</p>
+            <p>Contact Us</p>
           </div>
           <div className="footer-items">
-            <h2>Address</h2>
-            <p>placeholder</p>
-          </div>
-        </div>
-        <div className="footer-wrapper">
-          <div className="footer-items">
-            <h2>Contact</h2>
-            <p>placeholder</p>
+            <h2>About Us</h2>
+            <p>Privacy Policy</p>
+            <p>Terms</p>
+            <p>FAQ</p>
+            <p>Support</p>
           </div>
           <div className="footer-items">
             <h2>Social Media</h2>

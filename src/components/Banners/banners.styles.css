@@ -54,3 +54,9 @@ video {
         0px 0px 55px rgba(218, 165, 32, 1),
         0px 0px 75px rgba(218, 165, 32, 1);
 }
+
+@media screen and (max-width: 60em) {
+    .video-container>h1 {
+        font-size: 3rem;
+    }
+}

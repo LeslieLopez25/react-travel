@@ -105,6 +105,13 @@
     .hero-container .right-section>h2 {
         font-size: clamp(2rem, 5vw, 3rem);
         margin-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .hero-container .right-section>p {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 
     .hero-container .left-section {

@@ -64,6 +64,7 @@
     padding: 0.5rem 1rem;
     height: 100%;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-links:hover {
@@ -102,7 +103,7 @@
     }
 
     .nav-menu.active {
-        background-color: #002e63;
+        background-color: #002147;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -121,9 +122,10 @@
     }
 
     .nav-links:hover {
-        background-color: #002147;
+        background-color: #002e63;
         color: #daa520;
         border-radius: 0;
+
     }
 
     .navbar-logo {
@@ -151,7 +153,7 @@
         cursor: pointer;
     }
 
-    .fa-times {
+    .fa-xmark {
         color: #fff;
         font-size: 2rem;
     }

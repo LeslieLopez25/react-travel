@@ -23,8 +23,147 @@
         0px 0px 75px rgba(0, 33, 71, 1);
 }
 
+.destinations-image_container {
+    max-width: 1400px;
+    height: 750px;
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    background: linear-gradient(-45deg, #002147, #002e63, #daa520, #ffcc33);
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    padding-bottom: 2rem;
+}
+
+.destinations-image_cover {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+}
+
+.destinations-title_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.destinations-image_cover:hover+.destinations-title_overlay,
+.destinations-title_overlay:hover {
+    opacity: 1;
+}
+
+.destinations-image_title {
+    margin: 0;
+    color: #ffcc33;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.destinations-image_cover:hover+.destinations-title_overlay .destinations-image_title,
+.destinations-title_overlay:hover .destinations-image_title {
+    opacity: 1;
+}
+
+.d-left_arrow,
+.d-right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.d-left_arrow:hover,
+.d-right_arrow:hover {
+    opacity: 0.5;
+}
+
+.d-left_arrow {
+    left: 17rem;
+    transition: left 0.5s;
+}
+
+.d-right_arrow {
+    right: 17rem;
+    transition: right 0.5s;
+}
+
+.destinations-slide_indicator {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+}
+
+.destinations-slider {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 87.75em) {
+    .destinations-image_container {
+        padding: 2rem;
+    }
+
+    .d-left_arrow {
+        left: 2rem;
+    }
+
+    .d-right_arrow {
+        right: 2rem;
+    }
+}
+
 @media screen and (max-width: 81.25em) {
     .destinations-video_container>h1 {
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .d-left_arrow {
+        left: 2rem;
+    }
+
+    .d-right_arrow {
+        right: 2rem;
     }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import DestinationsBanner from "./destinationsBanner.component";
+import DestinationImageCarousel from "./destinationsImageCarousel.component";
 import "./destinations.styles.css";
 
 export default function Destinations() {
@@ -7,6 +8,7 @@ export default function Destinations() {
   return (
     <>
       <DestinationsBanner />
+      <DestinationImageCarousel />
     </>
   );
 }

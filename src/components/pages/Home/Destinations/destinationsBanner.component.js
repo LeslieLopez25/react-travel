@@ -4,11 +4,9 @@ import "./destinations.styles.css";
 
 export default function DestinationsBanner() {
   return (
-    <div className="video-container">
+    <div className="destinations-video_container">
       <video src={Banner} autoPlay loop muted />
-      <h1 className="section-title">
-        Forge your path and behold the beauty of the world!
-      </h1>
+      <h1 className="section-title">Chase the Horizon</h1>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import DestinationsBanner from "./destinationsBanner.component";
-import DestinationImageCarousel from "./destinationsImageCarousel.component";
+import DestinationsBanner from "./destinations-banner.component";
+import DestinationImageCarousel from "./destinations-image_carousel.component";
 import "./destinations.styles.css";
 
 export default function Destinations() {

@@ -208,8 +208,8 @@ h1 {
 
 .destinations-cards__item__img {
     display: block;
-    width: 20vw;
-    height: 80vh;
+    width: 25vw;
+    height: 50vh;
     background-size: 100% 100%;
     transition: all 0.2s linear;
 }

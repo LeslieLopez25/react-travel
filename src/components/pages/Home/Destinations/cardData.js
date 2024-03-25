@@ -38,7 +38,7 @@ const cardData = [
   {
     src: Img6,
     label: "Italy",
-    desc: "Italy is home to the smallest country in the world: Vatican City. Encircled by Rome, Vatican City covers just over 44 hectares (110 acres) and serves as the spiritual and administrative center of the Roman Catholic Church. Despite its small size, Vatican City is a treasure trove of art, history, and culture, boasting iconic landmarks such as St. Peter's Basilica, the Sistine Chapel with Michelangelo's masterpiece ceiling, and the Vatican Museums, which house one of the most extensive art collections in the world.",
+    desc: "Italy is home to the smallest country in the world: Vatican City. Encircled by Rome, Vatican City covers just over 44 hectares (110 acres) and serves as the spiritual and administrative center of the Roman Catholic Church.",
   },
   {
     src: Img7,

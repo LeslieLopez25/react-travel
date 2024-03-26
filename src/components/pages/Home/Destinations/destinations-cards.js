@@ -6,18 +6,20 @@ import "./destinations.styles.css";
 export default function DestinationsCard() {
   return (
     <div className="destinations-cards__container">
-      <h1 className="section-title">Destinations</h1>
+      <h1 className="destinations-heading section-title">Destinations</h1>
       <div className="destinations-cards__wrapper">
-        <ul className="destinations-cards__items">
-          {cardData.map((card, index) => (
-            <DestinationsCardItem
-              key={index}
-              src={card.src}
-              label={card.label}
-              desc={card.desc}
-            />
-          ))}
-        </ul>
+        <div className="destinations-card">
+          <ul className="destinations-cards__items">
+            {cardData.map((card, index) => (
+              <DestinationsCardItem
+                key={index}
+                src={card.src}
+                label={card.label}
+                desc={card.desc}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

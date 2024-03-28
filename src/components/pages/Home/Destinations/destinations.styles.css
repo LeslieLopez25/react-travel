@@ -143,48 +143,43 @@ h1 {
     text-align: center;
 }
 
-.destinations-cards__container {
-    min-width: 100%;
-    width: 100%;
+.destinations-cards {
     background: linear-gradient(150deg, rgb(0, 46, 99) 0%, rgb(218, 165, 32) 100%);
-    padding: 5rem calc((100vw - 81.25rem) / 2);
+    padding: 4rem;
 }
 
-.destinations-cards__container .destinations-heading {
+.destinations-cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 90%;
+}
+
+.destinations-heading {
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 5rem;
     text-align: center;
 }
 
-.destinations-cards__container .destinations-cards__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.destinations-cards__wrapper .destinations-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    margin: 0 2rem;
-    width: 10rem;
-    line-height: 2;
+.destinations-cards__wrapper {
+    margin: 3.125rem 0 2.8125rem;
+    position: relative;
 }
 
 .destinations-cards__item {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    margin: 0 1rem;
     margin-bottom: 1.5rem;
     border-radius: 10px;
 }
 
 .destinations-cards__item__block {
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    flex-flow: column;
+    width: 100%;
     text-decoration: none;
     box-shadow: 0 0.375rem 1.25rem #ffcc33;
     -webkit-filter: drop-shadow(0 0.375rem 1.25rem #002147);
@@ -194,7 +189,8 @@ h1 {
 }
 
 .destinations-cards__item__pic-wrap {
-    width: 50%;
+    padding-top: 50%;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -220,9 +216,16 @@ h1 {
 
 .destinations-cards__item__img {
     display: block;
-    width: 25vw;
-    height: 50vh;
-    background-size: 100% 100%;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
     transition: all 0.2s linear;
 }
 

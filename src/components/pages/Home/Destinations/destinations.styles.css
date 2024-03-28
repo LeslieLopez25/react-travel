@@ -236,9 +236,7 @@ h1 {
 .explanation {
     padding: 20px;
     background-color: #f9f9f9;
-    margin-top: -1px;
-    width: 40vw;
-    margin-left: 100px;
+    height: 100%;
 }
 
 @media screen and (max-width: 87.75em) {

@@ -186,6 +186,30 @@ h1 {
     filter: drop-shadow(0 0.375rem 1.25rem #002147);
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+}
+
+.heart-icons {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.heart-icon_box {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #ffcc33;
+    border-radius: 50%;
+}
+
+.heart-icon {
+    margin-left: 5px;
+    color: #ff0000;
 }
 
 .destinations-cards__item__pic-wrap {

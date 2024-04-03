@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DestinationsCardItem from "./destinations-card_item.component";
 import Img1 from "../../../../assets/images/canada-2-min.jpg";
 import Img2 from "../../../../assets/images/england-2.jpg";
@@ -14,6 +14,11 @@ import Img10 from "../../../../assets/images/u.s.a-2-min.jpg";
 import "./destinations.styles.css";
 
 export default function DestinationsCard() {
+  // To have the page start at the top when refreshing
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="destinations-cards">
       <h1 className="section-title">Destinations</h1>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Img1 from "../../assets/images/england-4.jpg";
-import Img2 from "../../assets/images/france-4.jpg";
-import Img3 from "../../assets/images/italy-4.jpg";
-import Img4 from "../../assets/images/greece-4.jpg";
+import Img1 from "../../assets/images/england-3.jpg";
+import Img2 from "../../assets/images/france-3.jpg";
+import Img3 from "../../assets/images/italy-3.jpg";
+import Img4 from "../../assets/images/greece-3.jpg";
 import Img5 from "../../assets/images/singapore-1.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";

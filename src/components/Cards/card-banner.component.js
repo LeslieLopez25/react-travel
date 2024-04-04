@@ -1,5 +1,5 @@
 import React from "react";
-import CardBannerItem from "./cardBannerItem.component";
+import CardBannerItem from "./card-banner-item.component";
 
 export default function CardBanner() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import CardItem from "./cardItem.component";
+import CardItem from "./card-item.component";
 import Img1 from "../../assets/images/canada-4-min.jpg";
 import Img2 from "../../assets/images/england-4.jpg";
 import Img3 from "../../assets/images/france-4.jpg";

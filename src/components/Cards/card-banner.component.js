@@ -1,12 +1,13 @@
 import React from "react";
 import CardBannerItem from "./card-banner-item.component";
+import Img1 from "../../assets/images/mexico-3-min.jpg";
 
 export default function CardBanner() {
   return (
-    <div>
-      <h1>A Vast World</h1>
+    <div className="card-banner">
+      <h1 className=" section-title">Discover the Unexpected</h1>
       <CardBannerItem
-        imageUrl="../../assets/images/mexico-3-min.jpg"
+        imageUrl={Img1}
         desc="Mexico: A land of ancient civilizations, spicy cuisine, and vibrant fiestas! From the towering pyramids of Teotihuacan to the turquoise waters of Cancun, there's never a dull moment in this colorful country!"
       />
     </div>

@@ -5,6 +5,8 @@ import Loader from "./components/Loader/loader.component";
 import { Home } from "./components/exportPages.component";
 import Destinations from "./components/pages/Home/Destinations/destinations.component";
 import Footer from "./components/Footer/footer.component";
+import Gallery from "./components/pages/Gallery/gallery.component";
+
 import "./App.css";
 
 export default function App() {
@@ -26,6 +28,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/destinations" element={<Destinations />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
           <Footer />
         </>

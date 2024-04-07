@@ -102,6 +102,20 @@ h1 {
     padding: 4rem;
 }
 
+.subtitle-container {
+    text-align: center;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-decoration-line: underline;
+    text-decoration-color: #ffcc33;
+}
+
 .card-banner_container {
     display: flex;
     align-items: center;

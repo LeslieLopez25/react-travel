@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Img6 from "../../../../assets/images/japan-4-min.jpg";
 import Img7 from "../../../../assets/images/mexico-4-min.jpg";
 import Img8 from "../../../../assets/images/u.s.a-4-min.jpg";
+import Img9 from "../../../../assets/images/ireland-3.jpg";
+import Img10 from "../../../../assets/images/norway-3-min.jpg";
+import Img11 from "../../../../assets/images/canada-3-min.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import "./destinations.styles.css";
@@ -19,6 +22,18 @@ export default function DestinationImageCarousel() {
     {
       url: Img8,
       title: "United States",
+    },
+    {
+      url: Img9,
+      title: "Ireland",
+    },
+    {
+      url: Img10,
+      title: "Norway",
+    },
+    {
+      url: Img11,
+      title: "Canada",
     },
   ];
 

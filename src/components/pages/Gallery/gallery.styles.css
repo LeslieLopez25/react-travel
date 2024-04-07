@@ -7,22 +7,22 @@
     text-align: center;
 }
 
-.gallery {
+.gallery-container {
     column-count: 3;
     padding: 0 0.75rem;
 }
 
-.gallery .pics {
+.gallery-container .pics {
     margin-bottom: 0.75rem;
     transition: all 350ms ease;
     cursor: pointer;
 }
 
-.gallery .pics:hover {
+.gallery-container .pics:hover {
     filter: opacity(0.8);
 }
 
-.gallery .pics>img {
+.gallery-container .pics>img {
     max-width: 100%;
     width: auto;
     max-height: 100%;
@@ -30,13 +30,13 @@
 }
 
 @media screen and (max-width: 61.9375em) {
-    .gallery {
+    .gallery-container {
         column-count: 2;
     }
 }
 
 @media screen and (max-width: 30em) {
-    .gallery {
+    .gallery-container {
         column-count: 1;
     }
 }

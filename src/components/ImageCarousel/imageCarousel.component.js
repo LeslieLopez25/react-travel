@@ -4,6 +4,8 @@ import Img2 from "../../assets/images/france-3.jpg";
 import Img3 from "../../assets/images/italy-3.jpg";
 import Img4 from "../../assets/images/greece-3.jpg";
 import Img5 from "../../assets/images/singapore-1.jpg";
+import Img6 from "../../assets/images/japan-3-min.jpg";
+import Img7 from "../../assets/images/u.s.a-3-min.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import "./imageCarousel.styles.css";
@@ -29,6 +31,14 @@ export default function ImageCarousel() {
     {
       url: Img5,
       title: "Singapore",
+    },
+    {
+      url: Img6,
+      title: "Japan",
+    },
+    {
+      url: Img7,
+      title: "United States",
     },
   ];
 

@@ -1,10 +1,10 @@
 .gallery-heading {
-    background: linear-gradient(150deg, rgb(0, 46, 99) 0%, rgb(218, 165, 32) 100%);
     color: white;
     font-size: clamp(2rem, 2.5vw, 3rem);
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .gallery-container {

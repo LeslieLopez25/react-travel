@@ -9,6 +9,7 @@ import "../../../App.css";
 export default function Gallery() {
   const [model, setModel] = useState(false);
   const [tempimgSrc, setTempImgSrc] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   // To determine if the image is clicked to open the model and close the model when the x-mark is clicked
   const getImg = (imgSrc) => {
@@ -31,8 +32,11 @@ export default function Gallery() {
       <div className="gallery-container">
         {imgData.map((img, id) => {
           return (
-            <div className="pics" key={id} onClick={() => getImg(img.imgSrc)}>
-              <img src={img.imgSrc} alt={""} />
+            <div className="gallery-overlay">
+              <h2 className="gallery-title">{imgData[currentIndex].title}</h2>
+              <div className="pics" key={id} onClick={() => getImg(img.imgSrc)}>
+                <img src={img.imgSrc} alt={""} />
+              </div>
             </div>
           );
         })}

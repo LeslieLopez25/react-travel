@@ -9,11 +9,12 @@ import "../../../App.css";
 export default function Gallery() {
   const [model, setModel] = useState(false);
   const [tempimgSrc, setTempImgSrc] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [hoveredCountry, setHoveredCountry] = useState(0);
 
   // To determine if the image is clicked to open the model and close the model when the x-mark is clicked
-  const getImg = (imgSrc) => {
+  const getImg = (imgSrc, title) => {
     setTempImgSrc(imgSrc);
+    setHoveredCountry(title);
     setModel(true);
   };
 
@@ -27,14 +28,19 @@ export default function Gallery() {
       <h2 className="gallery-heading section-title">Gallery</h2>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} alt={""} />
+        <p className="country-name">{hoveredCountry}</p>
         <FontAwesomeIcon icon={faTimes} onClick={() => setModel(false)} />
       </div>
       <div className="gallery-container">
         {imgData.map((img, id) => {
           return (
-            <div className="gallery-overlay">
-              <h2 className="gallery-title">{imgData[currentIndex].title}</h2>
-              <div className="pics" key={id} onClick={() => getImg(img.imgSrc)}>
+            <div className="gallery-overlay" key={id}>
+              <h2 className="gallery-title">{img.title}</h2>
+              <div
+                className="pics"
+                key={id}
+                onClick={() => getImg(img.imgSrc, img.title)}
+              >
                 <img src={img.imgSrc} alt={""} />
               </div>
             </div>

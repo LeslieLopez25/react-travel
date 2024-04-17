@@ -1,0 +1,35 @@
+.signup-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 600px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.signup-error {
+    background-color: #feb2b2;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form_container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.signup-input_container {
+    width: 100%;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.signup-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}

@@ -44,20 +44,50 @@
 
 .signup-button {
     width: 100%;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: none;
+    overflow: hidden;
+    border: 2px solid #002147;
+    color: #002147;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0.75rem;
-    border-radius: 1rem;
-    box-shadow: 0 25rem 50rem -12px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    background-color: #2563eb;
-    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signup-button:hover {
+    color: #ffcc33;
+}
+
+.signup-button:hover:after {
+    height: 100%;
+}
+
+.signup-button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #002147;
 }
 
 .link-accent {
     color: #f59e0b;
     transition: 0.4s ease-in-out;
     text-decoration: none;
+    margin-left: 0.2rem;
 }
 
 .link-accent:hover {

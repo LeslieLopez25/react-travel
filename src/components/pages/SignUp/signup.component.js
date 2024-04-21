@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 
+import "./signup.styles.css";
+
 export default function SignUp() {
   return (
     <div>
       <div className="signup-container">
         <h1 className="section-title">Sign Up</h1>
-        <p className="signup-error">Error</p>
+        {/* <p className="signup-error">Error</p> */}
         <form>
           <div className="signup-form_container">
             <label>Email</label>

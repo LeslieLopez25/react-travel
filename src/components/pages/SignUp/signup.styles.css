@@ -7,6 +7,7 @@
     padding-right: 1rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    color: #ffcc33;
 }
 
 .signup-error {
@@ -36,7 +37,7 @@
 
 .icons {
     position: absolute;
-    right: 0.5rem;
+    right: 1rem;
     top: 0.75rem;
     color: #9ca3af;
 }
@@ -50,8 +51,15 @@
     box-shadow: 0 25rem 50rem -12px rgba(0, 0, 0, 0.25);
     color: #fff;
     background-color: #2563eb;
+    cursor: pointer;
 }
 
 .link-accent {
     color: #f59e0b;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.link-accent:hover {
+    color: #002e63;
 }

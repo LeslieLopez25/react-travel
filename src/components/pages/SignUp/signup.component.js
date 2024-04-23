@@ -30,7 +30,7 @@ export default function SignUp() {
         </form>
         <p className="signup-link">
           Already have an account?{" "}
-          <Link to="/signin" className="link-accent">
+          <Link to="/signin" element={<SignUp />} className="link-accent">
             Sign In
           </Link>
         </p>

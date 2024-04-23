@@ -7,6 +7,7 @@ import Destinations from "./components/pages/Home/Destinations/destinations.comp
 import Footer from "./components/Footer/footer.component";
 import Gallery from "./components/pages/Gallery/gallery.component";
 import SignUp from "./components/pages/SignUp/signup.component";
+import SignIn from "./components/pages/SignIn/signin.component";
 
 import "./App.css";
 
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/signin" element={<SignIn />} />
           </Routes>
           <Footer />
         </>

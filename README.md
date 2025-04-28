@@ -48,6 +48,12 @@ Trailblaze is a completed personal project for practicing frontend development a
 
 [TrailBlaze](https://react-travel-786y.onrender.com)
 
+# Screenshots
+
+<img src="./src/assets/screenshots/home.png" width="400">
+<img src="./src/assets/screenshots/des.png" width="400">
+<img src="./src/assets/screenshots/gallery.png" width="400">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

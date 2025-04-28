@@ -1,3 +1,53 @@
+Trailblaze
+
+Trailblaze is a simple, frontend React project that explores different countries with beautiful images and short descriptions. It's designed to inspire travel and curiosity about the world.
+Features
+
+    Browse different countries
+
+    View a picture and a brief description for each destination
+
+    Clean and responsive design
+
+    Built entirely with React
+
+Technologies Used
+
+    React
+
+    JavaScript
+
+    HTML5 & CSS3
+
+Getting Started
+
+To run Trailblaze locally:
+
+    Clone the repository:
+
+git clone https://github.com/your-username/trailblaze.git
+
+Navigate to the project folder:
+
+cd trailblaze
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+    npm start
+
+The app will open at http://localhost:3000 in your browser.
+Project Status
+
+Trailblaze is a completed personal project for practicing frontend development and design.
+
+# Live Site
+
+[TrailBlaze]("https://react-travel-786y.onrender.com")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

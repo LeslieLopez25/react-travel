@@ -46,7 +46,7 @@ Trailblaze is a completed personal project for practicing frontend development a
 
 # Live Site
 
-[TrailBlaze]("https://react-travel-786y.onrender.com")
+[TrailBlaze](https://react-travel-786y.onrender.com)
 
 # Getting Started with Create React App
 

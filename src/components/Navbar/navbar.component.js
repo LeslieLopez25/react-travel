@@ -45,11 +45,6 @@ export default function Navbar() {
               Gallery
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/signup" className="nav-links" onClick={closeMobileMenu}>
-              Sign Up
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
